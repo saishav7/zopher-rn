@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "zopher-20190303203341-authRole",
+            "UnauthRoleArn": "arn:aws:iam::635254460951:role/zopher-20190303203341-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::635254460951:role/zopher-20190303203341-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "zopher-20190303203341-deployment",
+            "UnauthRoleName": "zopher-20190303203341-unauthRole",
+            "StackName": "zopher-20190303203341",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:635254460951:stack/zopher-20190303203341/6f120a00-3d97-11e9-b33d-0a996106fc92"
+        },
+        "categories": {
+            "auth": {
+                "cognitoc73a8d88": {}
+            }
+        }
+    }
+}

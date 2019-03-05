@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "zopher",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitoc73a8d88",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

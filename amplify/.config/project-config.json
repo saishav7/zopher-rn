@@ -1,0 +1,17 @@
+{
+    "projectName": "Zopher",
+    "version": "2.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "react-native",
+        "config": {
+            "SourceDir": "/",
+            "DistributionDir": "/",
+            "BuildCommand": "yarn run-script build",
+            "StartCommand": "yarn run-script start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}
