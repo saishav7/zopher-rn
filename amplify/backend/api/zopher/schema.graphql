@@ -12,3 +12,11 @@ type Like @model {
   likeOwnerId: String!
   post: Post @connection(name: "PostLikes")
 }
+
+type Comment @model {
+  id: ID!
+  comment: String!
+  commentOwnerUsername: String!
+  commentOwnerId: String!
+  post: Post @connection(name: "PostLikes")
+}

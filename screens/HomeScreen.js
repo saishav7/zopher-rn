@@ -39,7 +39,8 @@ export default class HomeScreen extends React.Component {
     posts: [],
     likeOwnerUsername: "",
     likeOwnerId: "",
-    numberLikes: 0
+    numberLikes: 0,
+    people: []
   };
 
   componentDidMount = async () => {
@@ -53,6 +54,14 @@ export default class HomeScreen extends React.Component {
         });
       })
       .catch(err => console.log(err));
+
+    await API.get("peopleapi", "/people")
+      .then(data => {
+        console.log("here" + JSON.stringify(data.people));
+        this.setState({ people: data.people });
+      })
+      .catch(err => console.log(err));
+
     this.listPosts();
   };
 
